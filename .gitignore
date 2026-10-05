@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.env.local
+
+# Production build outputs
+dist/
+dist-ssr/
+build/
+out/
+
+# Uploads & User Media (Docker volume / local uploads)
+uploads/
+**/uploads/*
+!**/uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+*.lcov
+vitest.config.ts.timestamp*
+vite.config.ts.timestamp*
+
+# Temporary files & caches
+.cache/
+.temp/
+tmp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDE & Editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
