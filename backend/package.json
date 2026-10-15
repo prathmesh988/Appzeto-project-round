@@ -4,9 +4,9 @@
   "description": "Multi-tenant project management backend",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
+    "dev": "node api.js && tsx watch src/server.ts",
+    "build": "node api.js && tsc",
+    "start": "node api.js && node dist/server.js",
     "db:init": "tsx src/scripts/init-db.ts",
     "db:seed": "tsx src/scripts/seed.ts",
     "db:seed:scale": "tsx src/scripts/seed-scale.ts",
